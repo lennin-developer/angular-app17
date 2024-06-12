@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [RouterOutlet], //CommonModule es requerido cuando en nuestro html usamos las direvtivas ngIf, ngFor, etc
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -13,11 +13,10 @@ export class AppComponent {
   title: string = 'Hola Mundo Angular';
   users: string[] = ['Pepe', 'Lennin', 'Mishel'];
 
-  visible:boolean = false;
+  visible: boolean = false;
 
-  setVisible(): void{
-    this.visible = this.visible?false:true;
+  setVisible(): void {
+    this.visible = this.visible ? false : true;
     console.log('Hemos hecho click en el setVisible');
   }
-
 }
