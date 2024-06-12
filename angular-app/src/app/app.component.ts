@@ -11,7 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title: string = 'Hola Mundo Angular';
-  users: string[] = ['Pepe', 'Lennin', 'Mishel'];
+  users: string[] = ['Mishel', 'Lennin', 'Pilar'];
 
   visible: boolean = false;
 
